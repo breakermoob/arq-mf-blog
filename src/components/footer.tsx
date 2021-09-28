@@ -1,12 +1,11 @@
-import { Navbar, Nav, NavDropdown, Container } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.css";
-import { LinkContainer } from 'react-router-bootstrap';
+import './footer.css';
 import {
     BrowserRouter as Router,
 } from "react-router-dom";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faReact } from '@fortawesome/free-brands-svg-icons'
+import { faReact, faInstagram, faLinkedin, faSpeakerDeck, faGithub } from '@fortawesome/free-brands-svg-icons'
 
 const Footer = () => {
     return (<>
@@ -48,68 +47,51 @@ const Footer = () => {
                                 <li>
                                     <a
                                         href="https://www.phpcrudgenerator.com/tutorials/how-to-create-a-bootstrap-crud-admin-dashboard"
-                                        className="text-light"
-                                    >How to create a Bootstrap Admin Dashboard in PHP</a
-                                    >
+                                        className="text-light">How to create a Bootstrap Admin Dashboard in PHP</a>
                                 </li>
                                 <li>
                                     <a
                                         href="https://www.phpformbuilder.pro/drag-n-drop-form-builder/index.html"
-                                        className="text-light"
-                                    >Drag &amp; drop form builder</a
-                                    >
+                                        className="text-light">Drag &amp; drop form builder</a>
                                 </li>
                                 <li>
                                     <a
                                         href="https://www.tinymce-bootstrap-plugin.com/"
-                                        className="text-light"
-                                    >Bootstrap plugin for TinyMce</a
-                                    >
+                                        className="text-light">Bootstrap plugin for TinyMce</a>
                                 </li>
                             </ul>
                         </div>
                     </div>
-                    <div className="col d-flex justify-content-center align-items-center">
+                    <div className="col d-flex justify-content-center align-items-center mb-2">
                         <a
                             href="https://github.com/breakermoob"
                             target="_blank"
-                            className="d-block px-3"
-                        >
-                            <i className="fab fa-github fa-2x arq-mf-icon"></i
-                            ></a>
+                            className="d-block px-3">
+                            <FontAwesomeIcon icon={faGithub} size="2x" className="arq-mf-icon" />
+                        </a>
                         <a
                             href="https://www.instagram.com/leo_argam/"
                             target="_blank"
-                            className="d-block px-3"
-                        >
-                            <i className="fab fa-instagram fa-2x arq-mf-icon"></i
-                            ></a>
+                            className="d-block px-3">
+                            <FontAwesomeIcon icon={faInstagram} size="2x" className="arq-mf-icon" />
+                        </a>
                         <a className="d-block px-3">
-                            <i className="fab fa-vuejs fa-5x arq-mf-icon--center"></i
-                            ></a>
+                            <FontAwesomeIcon icon={faReact} size="5x" style={{ color: "#61dbfb" }} className="arq-mf-icon--center" />
+                        </a>
                         <a
                             href="https://www.linkedin.com/in/breakermoob/"
                             target="_blank"
-                            className="d-block px-3"
-                        >
-                            <i className="fab fa-linkedin fa-2x arq-mf-icon"></i
-                            ></a>
+                            className="d-block px-3">
+                            <FontAwesomeIcon icon={faLinkedin} size="2x" className="arq-mf-icon" />
+                        </a>
                         <a
                             href="https://speakerdeck.com/breakermoob/"
                             target="_blank"
-                            className="d-block px-3"
-                        >
-                            <i className="fab fa-speaker-deck fa-2x arq-mf-icon"></i
-                            ></a>
+                            className="d-block px-3">
+                            <FontAwesomeIcon icon={faSpeakerDeck} size="2x" className="arq-mf-icon" />
+                        </a>
                     </div>
-                    <p
-                        className="
-            text-center text-secondary
-            border-top border-secondary
-            py-4
-            mb-0
-          "
-                    >
+                    <p className="text-center text-secondary border-top border-secondary py-4 mb-0">
                         Arquitectura Microfrontends por Leon Arango © 2021
                     </p>
                 </div>
