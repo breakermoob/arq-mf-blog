@@ -11,8 +11,9 @@ before_install:
   - pip install awscli
 script:
   - npm run build
-  - mkdir -p build/blog/
-  - mv * build/blog/
+  - mkdir -p build/blog
+  - mv build/static build/blog
+  - mv build/*.* build/blog
 deploy:
   provider: s3
   access_key_id: "$AWS_ACCESS_KEY_ID"
