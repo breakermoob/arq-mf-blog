@@ -17,13 +17,13 @@ const Footer = () => {
                             <h4 className="mb-4">Services</h4>
                             <ul className="list-unstyled">
                                 <li>
-                                    <a href="#" className="text-light">Web design</a>
+                                    <a href="/" className="text-light">Web design</a>
                                 </li>
                                 <li>
-                                    <a href="#" className="text-light">Development</a>
+                                    <a href="/" className="text-light">Development</a>
                                 </li>
                                 <li>
-                                    <a href="#" className="text-light">Hosting</a>
+                                    <a href="/" className="text-light">Hosting</a>
                                 </li>
                             </ul>
                         </div>
@@ -31,13 +31,13 @@ const Footer = () => {
                             <h4 className="mb-4">About</h4>
                             <ul className="list-unstyled">
                                 <li>
-                                    <a href="#" className="text-light">Company</a>
+                                    <a href="/" className="text-light">Company</a>
                                 </li>
                                 <li>
-                                    <a href="#" className="text-light">Team</a>
+                                    <a href="/" className="text-light">Team</a>
                                 </li>
                                 <li>
-                                    <a href="#" className="text-light">Careers</a>
+                                    <a href="/" className="text-light">Careers</a>
                                 </li>
                             </ul>
                         </div>
@@ -66,27 +66,31 @@ const Footer = () => {
                         <a
                             href="https://github.com/breakermoob"
                             target="_blank"
+                            rel="noreferrer"
                             className="d-block px-3">
                             <FontAwesomeIcon icon={faGithub} size="2x" className="arq-mf-icon" />
                         </a>
                         <a
                             href="https://www.instagram.com/leo_argam/"
                             target="_blank"
+                            rel="noreferrer"
                             className="d-block px-3">
                             <FontAwesomeIcon icon={faInstagram} size="2x" className="arq-mf-icon" />
                         </a>
-                        <a className="d-block px-3">
+                        <i className="d-block px-3">
                             <FontAwesomeIcon icon={faReact} size="5x" style={{ color: "#61dbfb" }} className="arq-mf-icon--center" />
-                        </a>
+                        </i>
                         <a
                             href="https://www.linkedin.com/in/breakermoob/"
                             target="_blank"
+                            rel="noreferrer"
                             className="d-block px-3">
                             <FontAwesomeIcon icon={faLinkedin} size="2x" className="arq-mf-icon" />
                         </a>
                         <a
                             href="https://speakerdeck.com/breakermoob/"
                             target="_blank"
+                            rel="noreferrer"
                             className="d-block px-3">
                             <FontAwesomeIcon icon={faSpeakerDeck} size="2x" className="arq-mf-icon" />
                         </a>
