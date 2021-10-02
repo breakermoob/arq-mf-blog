@@ -13,6 +13,7 @@ script:
   - npm run build
   - mkdir -p blog/
   - mv build/*.* blog/
+  - mv build/* blog/
 deploy:
   provider: s3
   access_key_id: "$AWS_ACCESS_KEY_ID"
