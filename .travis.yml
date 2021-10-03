@@ -12,8 +12,7 @@ before_install:
 script:
   - npm run build
   - mkdir -p build/blog
-  - mv build/static build/blog
-  - mv build/*.* build/blog
+  - cp build/index.html build/blog
 deploy:
   provider: s3
   access_key_id: "$AWS_ACCESS_KEY_ID"
