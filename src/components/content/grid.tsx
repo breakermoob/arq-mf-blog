@@ -82,10 +82,10 @@ const BlogGrid = () => {
 
     return (<>
         <Container className="mt-5 mb-5">
-            <Row>
+            <Row >
 
                 {data.map(function (item) {
-                    return <Col xs={12} md={4} className="mb-4">
+                    return <Col xs={12} md={4} className="mb-4 d-flex justify-content-center">
                         <Card
                             bg={'light'}
                             border="dark"
