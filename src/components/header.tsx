@@ -15,7 +15,7 @@ const Header = () => {
         <Router>
             <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
                 <Container className="d-flex align-items-center">
-                    <LinkContainer to="/">
+                    <LinkContainer to="/blog">
                         <Navbar.Brand className="d-flex align-items-center">
                             <FontAwesomeIcon icon={faReact} size="2x" style={{ color: "#61dbfb" }} />
                             <h2 style={{ margin: "0.5rem" }}>Blog</h2>
@@ -26,24 +26,12 @@ const Header = () => {
                     </Navbar.Toggle>
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="ms-auto">
-                            <LinkContainer to="/perfil">
-                                <Nav.Link>Perfil</Nav.Link>
-                            </LinkContainer>
-                            <LinkContainer to="/login">
-                                <Nav.Link>Ingresar</Nav.Link>
-                            </LinkContainer>
+                            <Nav.Link href="https://www.microfrontends.rocks">Galería</Nav.Link>
+                            <Nav.Link href="https://admin.microfrontends.rocks">Panel</Nav.Link>
                             <NavDropdown title="Ver más" id="collasible-nav-dropdown">
-                                <LinkContainer to="/detalles">
-                                    <NavDropdown.Item>
-                                        Panel - Subdominio
-                                    </NavDropdown.Item>
-                                </LinkContainer>
-                                <LinkContainer to="/blog">
-                                    <NavDropdown.Item>Blog - Path</NavDropdown.Item>
-                                </LinkContainer>
-                                <LinkContainer to="/perfil">
-                                    <NavDropdown.Item>Librería - NPM</NavDropdown.Item>
-                                </LinkContainer>
+                                <NavDropdown.Item
+                                    href="https://www.npmjs.com/package/arq-mf-weblib"
+                                    target="_blank" >Librería - NPM</NavDropdown.Item>
                                 <NavDropdown.Divider />
                                 <LinkContainer to="/">
                                     <NavDropdown.Item>Guía Completa</NavDropdown.Item>
